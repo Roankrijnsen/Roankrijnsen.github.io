@@ -1,51 +1,172 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | HBO-ICT</title>
 
-<head>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/javascript/script.js" defer></script>
+  </head>
 
-<body>
-    <nav>
-        <ul class="topnav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="why-it.html">Why-it</a></li>
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="blog.html">Blog</a></li>
-        </ul>
+  <body>
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="why-it.html">Why-it</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="blog.html">Blog</a>
     </nav>
-    <table style="width:90%">
-        <tr>
-            <th>Quarter</th>
-            <th>Course</th>
-            <th>EC</th>
-            <th>Exam</th>
-            <th>Grade</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>4</td>
-        </tr>
-    </table>
 
-</body>
+    <main class="content">
+      <header class="dashboard-header">
+        <h1>Mijn dashboard</h1>
+      </header>
 
+      <section class="dashboard-overzicht">
+        <article class="dashboard-kaart">
+          <h2>Behaalde EC</h2>
+          <p class="groot-getal">
+            <span id="behaalde-ec">0</span>
+            <span class="subtekst">/ 60 EC</span>
+          </p>
+        </article>
+
+        <article class="dashboard-kaart">
+          <h2>Studieadviesgrens</h2>
+          <p class="groot-getal">
+            <span id="advies-ec">0</span>
+            <span class="subtekst">/ 45 EC</span>
+          </p>
+        </article>
+      </section>
+
+      <section class="voortgang">
+        <div class="voortgang-kop">
+          <h2>Voortgang eerste studiejaar</h2>
+          <p id="voortgang-tekst">0% van de 60 EC behaald</p>
+        </div>
+
+        <div
+          class="voortgang-balk"
+          role="progressbar"
+          aria-label="Voortgang studiepunten"
+          aria-valuemin="0"
+          aria-valuemax="60"
+          aria-valuenow="0"
+          id="voortgang-balk"
+        >
+          <div class="voortgang-vulling" id="voortgang-vulling"></div>
+        </div>
+      </section>
+
+      <section class="dashboard-vakken">
+        <h2>Mijn vakken en cijfers</h2>
+
+        <div class="tabel-container">
+          <table class="tabel">
+            <thead>
+              <tr>
+                <th>Blok</th>
+                <th>Vak</th>
+                <th>EC</th>
+                <th>Cijfer</th>
+                <th>Examen</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr data-ec="5">
+                <td>1</td>
+                <td>Program &amp; Career Orientation</td>
+                <td>5</td>
+                <td class="cijfer">-</td>
+                <td class="status">Niet ingevuld</td>
+              </tr>
+
+              <tr data-ec="5">
+                <td>1</td>
+                <td>Programming Basics</td>
+                <td>5</td>
+                <td class="cijfer">-</td>
+                <td class="status">Niet ingevuld</td>
+              </tr>
+
+              <tr data-ec="5">
+                <td>1</td>
+                <td>Computer Science Basics</td>
+                <td>5</td>
+                <td class="cijfer">-</td>
+                <td class="status">Niet ingevuld</td>
+              </tr>
+
+              <tr data-ec="5">
+                <td>2</td>
+                <td>Object Oriented Programming</td>
+                <td>5</td>
+                <td class="cijfer">-</td>
+                <td class="status">Niet ingevuld</td>
+              </tr>
+              <tr data-ec="5">
+                <td>2</td>
+                <td>Agile and Team Management</td>
+                <td>5</td>
+                <td class="cijfer">-</td>
+                <td class="status">Niet ingevuld</td>
+              </tr>
+              <tr data-ec="5">
+                <td>2</td>
+                <td>Project: Foundations</td>
+                <td>5</td>
+                <td class="cijfer">-</td>
+                <td class="status">Niet ingevuld</td>
+              </tr>
+              <tr data-ec="5">
+                <td>3</td>
+                <td>Software Engineering Basics</td>
+                <td>5</td>
+                <td class="cijfer">-</td>
+                <td class="status">Niet ingevuld</td>
+              </tr>
+              <tr data-ec="5">
+                <td>3</td>
+                <td>Foundations of Data</td>
+                <td>5</td>
+                <td class="cijfer">-</td>
+                <td class="status">Niet ingevuld</td>
+              </tr>
+              <tr data-ec="5">
+                <td>3</td>
+                <td>Requirements Modelling</td>
+                <td>5</td>
+                <td class="cijfer">-</td>
+                <td class="status">Niet ingevuld</td>
+              </tr>
+              <tr data-ec="5">
+                <td>4</td>
+                <td>Web Application Development</td>
+                <td>5</td>
+                <td class="cijfer">-</td>
+                <td>Presentatie</td>
+              </tr>
+              <tr data-ec="5">
+                <td>4</td>
+                <td>Data Science Basics</td>
+                <td>5</td>
+                <td class="cijfer">-</td>
+                <td class="status">Niet ingevuld</td>
+              </tr>
+              <tr data-ec="5">
+                <td>4</td>
+                <td>Project: Applied Client Solutions</td>
+                <td>5</td>
+                <td class="cijfer">-</td>
+                <td class="status">Niet ingevuld</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
