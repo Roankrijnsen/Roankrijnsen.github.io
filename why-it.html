@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -13,22 +12,20 @@
 
 <body>
 
-    <nav class="topnav">
+<header class="site-header">
+      <nav class="topnav" aria-label="Hoofdnavigatie">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="why-it.html" class="active">Why-it</a>
+        <a href="why-it.html" aria-current="page" class="active">Why IT</a>
         <a href="dashboard.html">Dashboard</a>
         <a href="blog.html">Blog</a>
-    </nav>
+      </nav>
+    </header>
 
-    <main class="content">
+<main class="content">
 
         <header>
             <h1>Why IT?</h1>
-            <p>
-                Waarom heb ik voor HBO-ICT gekozen en wat wil ik bereiken
-                in de wereld van technologie?
-            </p>
         </header>
 
         <section>
@@ -56,7 +53,7 @@
             <p>
                 Wat mij vooral aanspreekt, is dat je met technologie
                 verschillende problemen kunt oplossen en steeds nieuwe
-                dingen kunt ontdekken. De ICT verandert voortdurend,
+                dingen kunt ontdekken. ICT verandert voortdurend,
                 waardoor er altijd iets nieuws te leren is.
             </p>
 
@@ -122,5 +119,19 @@
 
     </main>
 
-</body>
+
+    <footer class="site-footer">
+      <section class="external-links" aria-labelledby="external-title">
+        <h2 id="external-title">Externe links</h2>
+        <ul>
+          <li><a href="https://hz.nl/over-de-hz/regelingen-en-documenten" target="_blank" rel="noopener noreferrer">HZ-regelingen en documenten (CER)</a></li>
+          <li><a href="https://hz.nl/over-de-hz/regelingen-en-documenten" target="_blank" rel="noopener noreferrer">Implementation Regulations (IR) – HZ-documenten</a></li>
+          <li><a href="https://learn.hz.nl/" target="_blank" rel="noopener noreferrer">Learn-omgeving</a></li>
+          <li><a href="https://hz.osiris-student.nl/" target="_blank" rel="noopener noreferrer">Studievoortgang (Osiris)</a></li>
+          <li><a href="https://github.com/HZ-HBO-ICT" target="_blank" rel="noopener noreferrer">GitHub HZ HBO-ICT</a></li>
+        </ul>
+        <img class="external-hz-logo" src="images/hz-logo.avif" alt="HZ University of Applied Sciences-logo" width="393" height="113">
+      </section>
+    </footer>
+  </body>
 </html>

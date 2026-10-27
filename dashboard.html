@@ -4,21 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard | HBO-ICT</title>
+    <meta name="description" content="Bekijk mijn HBO-ICT-studievoortgang, studiepunten en cijfers op mijn persoonlijke dashboard." />
 
     <link rel="stylesheet" href="css/style.css" />
-    <script src="javascript/script.js" defer></script>
+    <script src="javascript/dashboard.js" defer></script>
   </head>
 
   <body>
-    <nav class="topnav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="why-it.html">Why-it</a>
-      <a href="dashboard.html" class="active">Dashboard</a>
-      <a href="blog.html">Blog</a>
-    </nav>
+  <header class="site-header">
+      <nav class="topnav" aria-label="Hoofdnavigatie">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="why-it.html">Why IT</a>
+        <a href="dashboard.html" aria-current="page" class="active">Dashboard</a>
+        <a href="blog.html">Blog</a>
+      </nav>
+    </header>
 
-    <main class="content">
+  <main class="content">
       <header class="dashboard-header">
         <h1>Mijn dashboard</h1>
       </header>
@@ -71,17 +74,15 @@
                 <th>Vak</th>
                 <th>EC</th>
                 <th>Cijfer</th>
-                <th>Examen</th>
               </tr>
             </thead>
 
             <tbody>
               <tr data-ec="5">
                 <td>1</td>
-                <td>Program &amp; Career Orientation</td>
+                <td>Program & Career Orientation</td>
                 <td>5</td>
                 <td class="cijfer">-</td>
-                <td class="status">Niet ingevuld</td>
               </tr>
 
               <tr data-ec="5">
@@ -89,7 +90,6 @@
                 <td>Programming Basics</td>
                 <td>5</td>
                 <td class="cijfer">-</td>
-                <td class="status">Niet ingevuld</td>
               </tr>
 
               <tr data-ec="5">
@@ -97,7 +97,6 @@
                 <td>Computer Science Basics</td>
                 <td>5</td>
                 <td class="cijfer">-</td>
-                <td class="status">Niet ingevuld</td>
               </tr>
 
               <tr data-ec="5">
@@ -105,68 +104,73 @@
                 <td>Object Oriented Programming</td>
                 <td>5</td>
                 <td class="cijfer">-</td>
-                <td class="status">Niet ingevuld</td>
               </tr>
               <tr data-ec="5">
                 <td>2</td>
                 <td>Agile and Team Management</td>
                 <td>5</td>
                 <td class="cijfer">-</td>
-                <td class="status">Niet ingevuld</td>
               </tr>
               <tr data-ec="5">
                 <td>2</td>
                 <td>Project: Foundations</td>
                 <td>5</td>
                 <td class="cijfer">-</td>
-                <td class="status">Niet ingevuld</td>
               </tr>
               <tr data-ec="5">
                 <td>3</td>
                 <td>Software Engineering Basics</td>
                 <td>5</td>
                 <td class="cijfer">-</td>
-                <td class="status">Niet ingevuld</td>
               </tr>
               <tr data-ec="5">
                 <td>3</td>
                 <td>Foundations of Data</td>
                 <td>5</td>
                 <td class="cijfer">-</td>
-                <td class="status">Niet ingevuld</td>
               </tr>
               <tr data-ec="5">
                 <td>3</td>
                 <td>Requirements Modelling</td>
                 <td>5</td>
                 <td class="cijfer">-</td>
-                <td class="status">Niet ingevuld</td>
               </tr>
               <tr data-ec="5">
                 <td>4</td>
                 <td>Web Application Development</td>
                 <td>5</td>
                 <td class="cijfer">-</td>
-                <td>Presentatie</td>
               </tr>
               <tr data-ec="5">
                 <td>4</td>
                 <td>Data Science Basics</td>
                 <td>5</td>
                 <td class="cijfer">-</td>
-                <td class="status">Niet ingevuld</td>
               </tr>
               <tr data-ec="5">
                 <td>4</td>
                 <td>Project: Applied Client Solutions</td>
                 <td>5</td>
                 <td class="cijfer">-</td>
-                <td class="status">Niet ingevuld</td>
               </tr>
             </tbody>
           </table>
         </div>
       </section>
     </main>
+
+  <footer class="site-footer">
+      <section class="external-links" aria-labelledby="external-title">
+        <h2 id="external-title">Externe links</h2>
+        <ul>
+          <li><a href="https://hz.nl/over-de-hz/regelingen-en-documenten" target="_blank" rel="noopener noreferrer">HZ-regelingen en documenten (CER)</a></li>
+          <li><a href="https://hz.nl/over-de-hz/regelingen-en-documenten" target="_blank" rel="noopener noreferrer">Implementation Regulations (IR) – HZ-documenten</a></li>
+          <li><a href="https://learn.hz.nl/" target="_blank" rel="noopener noreferrer">Learn-omgeving</a></li>
+          <li><a href="https://hz.osiris-student.nl/" target="_blank" rel="noopener noreferrer">Studievoortgang (Osiris)</a></li>
+          <li><a href="https://github.com/HZ-HBO-ICT" target="_blank" rel="noopener noreferrer">GitHub HZ HBO-ICT</a></li>
+        </ul>
+        <img class="external-hz-logo" src="images/hz-logo.avif" alt="HZ University of Applied Sciences-logo" width="393" height="113">
+      </section>
+    </footer>
   </body>
 </html>

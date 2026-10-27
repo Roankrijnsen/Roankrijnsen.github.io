@@ -1,0 +1,56 @@
+/* Responsive aanpassingen voor tablets en mobiele schermen. */
+@media (max-width: 760px) {
+  .site-header {
+    position: static;
+    padding: 8px 12px;
+  }
+  .topnav {
+    width: 100%;
+    gap: 2px;
+  }
+  .topnav a {
+    padding: 10px 12px;
+  }
+  .content {
+    margin: 20px 12px;
+    padding: 18px;
+  }
+  .site-footer {
+    margin: 16px 12px;
+    padding: 18px;
+  }
+  .dashboard-overzicht {
+    grid-template-columns: 1fr;
+  }
+  .voortgang-kop {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .tabel th,
+  .tabel td {
+    padding: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .about-media-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .about-media-row .about-image,
+  .about-media-row .about-video {
+    height: auto;
+    max-height: 260px;
+  }
+  .blog-overzicht {
+    grid-template-columns: 1fr;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .topnav a,
+  .voortgang-vulling {
+    transition: none;
+  }
+}

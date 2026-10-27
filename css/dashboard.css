@@ -1,0 +1,100 @@
+/* Dashboard: overzichtskaarten, studievoortgang en vakkenlijst. */
+.dashboard-header {
+  margin-bottom: 25px;
+}
+.dashboard-header p {
+  color: var(--color-muted);
+}
+.dashboard-overzicht {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 20px;
+  margin: 25px 0;
+}
+.dashboard-kaart {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-card);
+}
+.dashboard-kaart h2 {
+  margin: 0 0 12px;
+  color: var(--color-muted);
+  font-size: 16px;
+}
+.groot-getal {
+  margin: 0;
+  color: var(--color-green);
+  font-size: 30px;
+  font-weight: 700;
+}
+.subtekst {
+  color: #bfc3ca;
+  font-size: 16px;
+  font-weight: 400;
+}
+.voortgang {
+  min-width: 0;
+  margin: 25px 0;
+  padding: 20px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-card);
+}
+.voortgang-kop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.voortgang-kop h2 {
+  margin: 0;
+  font-size: 20px;
+}
+#voortgang-tekst {
+  margin: 0;
+  color: var(--color-muted);
+}
+.voortgang-balk {
+  width: 100%;
+  height: 18px;
+  margin-top: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--color-border);
+}
+.voortgang-vulling {
+  width: 0;
+  height: 100%;
+  border-radius: 10px;
+  background: var(--color-green);
+  transition: width 0.3s ease;
+}
+.dashboard-vakken {
+  min-width: 0;
+  margin-top: 35px;
+}
+.dashboard-overzicht > * {
+  min-width: 0;
+}
+.dashboard-vakken .tabel {
+  min-width: 620px;
+}
+.dashboard-vakken .tabel th,
+.dashboard-vakken .tabel td {
+  overflow-wrap: normal;
+}
+.tabel tbody tr.gehaald {
+  background: #174d37;
+}
+.tabel tbody tr.gefaald {
+  background: #542727;
+}
+.tabel tbody tr.gehaald:hover {
+  background: #216747;
+}
+.tabel tbody tr.gefaald:hover {
+  background: #703535;
+}

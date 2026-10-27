@@ -1,0 +1,72 @@
+/* Tabellen en statuskleuren voor algemene inhoud en het dashboard. */
+.content table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+.content th,
+.content td {
+  padding: 12px 15px;
+  border: 1px solid #45474b;
+  text-align: left;
+  vertical-align: top;
+}
+.content th {
+  background: var(--color-green);
+  color: #fff;
+}
+.content article table {
+  border-collapse: collapse;
+}
+.tabel-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 20px 0;
+  overflow-x: auto;
+  border-radius: var(--radius);
+}
+.tabel {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-card);
+  color: #fff;
+}
+.tabel th {
+  padding: 14px;
+  background: var(--color-green);
+  color: #fff;
+  text-align: left;
+  white-space: nowrap;
+}
+.tabel td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+  vertical-align: middle;
+}
+.tabel tbody tr:nth-child(even) {
+  background: var(--color-card-alt);
+}
+.tabel tbody tr:hover {
+  background: #383d45;
+}
+.tabel tbody tr:last-child td {
+  border-bottom: 0;
+}
+.status,
+.status-label {
+  font-weight: 700;
+  white-space: nowrap;
+}
+.status.behaald,
+.status-label.behaald {
+  color: var(--color-green-light);
+}
+.status.onvoldoende,
+.status-label.onvoldoende {
+  color: var(--color-red);
+}
+.status.niet-ingevuld,
+.status-label.niet-ingevuld {
+  color: #bfc3ca;
+}
